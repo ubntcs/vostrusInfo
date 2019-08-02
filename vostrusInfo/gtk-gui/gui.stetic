@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Debug/vostrusInfo.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="vostrusInfo.MainSreen" design-size="724 359">
+    <action-group name="Default">
+      <action id="UsuarioAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Usuario</property>
+        <property name="ShortLabel" translatable="yes">Usuario</property>
+      </action>
+      <action id="cadastrarUsuarioAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">cadastrarUsuario</property>
+        <property name="ShortLabel" translatable="yes">ConsultarUsuario</property>
+      </action>
+      <action id="ProdutoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Produto</property>
+        <property name="ShortLabel" translatable="yes">cadastroUsuario</property>
+      </action>
+      <action id="cadastrarProdutoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">cadastrarProduto</property>
+        <property name="ShortLabel" translatable="yes">consultarUsuario</property>
+      </action>
+      <action id="ProutoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Prouto</property>
+        <property name="ShortLabel" translatable="yes">Prouto</property>
+      </action>
+      <action id="cadastroProdutoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">cadastroProduto</property>
+        <property name="ShortLabel" translatable="yes">cadastroProduto</property>
+      </action>
+      <action id="consultaProdutoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">consultaProduto</property>
+        <property name="ShortLabel" translatable="yes">consultaProduto</property>
+      </action>
+      <action id="consultarProdutoAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">consultarProduto</property>
+        <property name="ShortLabel" translatable="yes">consultaProduto</property>
+      </action>
+      <action id="cadastrarUsuarioAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">cadastrarUsuario</property>
+        <property name="ShortLabel" translatable="yes">cadastrarUsuario</property>
+        <signal name="Activated" handler="OnCadastrarUsuarioAction1Activated" />
+      </action>
+      <action id="consultarUsuarioAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">consultarUsuario</property>
+        <property name="ShortLabel" translatable="yes">consultarUsuario</property>
+      </action>
+      <action id="sairAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">sair</property>
+        <property name="ShortLabel" translatable="yes">sair</property>
+        <signal name="Activated" handler="OnSairActionActivated" />
+      </action>
+    </action-group>
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainSreen</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <signal name="Removed" handler="OnFixed1Removed" />
+        <child>
+          <widget class="Gtk.MenuBar" id="menubar1">
+            <property name="MemberName">file</property>
+            <signal name="SelectionDone" handler="OnMenubar1SelectionDone" />
+            <node name="menubar1" type="Menubar">
+              <node type="Menu" action="UsuarioAction">
+                <node type="Menuitem" action="cadastrarUsuarioAction1" />
+                <node type="Menuitem" action="consultarUsuarioAction" />
+              </node>
+              <node type="Menu" action="ProdutoAction">
+                <node type="Menuitem" action="cadastrarProdutoAction" />
+                <node type="Menuitem" action="consultarProdutoAction" />
+              </node>
+              <node type="Menu" action="sairAction" />
+            </node>
+          </widget>
+          <packing>
+            <property name="X">3</property>
+            <property name="Y">6</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="vostrusInfo.telaCadastro" design-size="681 414">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">telaCadastro</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed2">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <signal name="DeleteEvent" handler="OnFixed2DeleteEvent" />
+        <signal name="Removed" handler="OnFixed2Removed" />
+        <child>
+          <widget class="Gtk.Entry" id="entry2">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">243</property>
+            <property name="Y">85</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="entry4">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">243</property>
+            <property name="Y">167</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="entry3">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">243</property>
+            <property name="Y">124</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="entry1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+            <signal name="Activated" handler="OnEntry1Activated" />
+          </widget>
+          <packing>
+            <property name="X">244</property>
+            <property name="Y">46</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label4">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Cartão Crédito</property>
+          </widget>
+          <packing>
+            <property name="X">32</property>
+            <property name="Y">167</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label3">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Plano</property>
+            <property name="MaxWidthChars">49</property>
+          </widget>
+          <packing>
+            <property name="X">34</property>
+            <property name="Y">127</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label2">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">email</property>
+          </widget>
+          <packing>
+            <property name="X">32</property>
+            <property name="Y">90</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="name">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Nome Completo</property>
+          </widget>
+          <packing>
+            <property name="X">28</property>
+            <property name="Y">55</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="res">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">label1</property>
+          </widget>
+          <packing>
+            <property name="X">450</property>
+            <property name="Y">239</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button2">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Cadastrar</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton2Clicked" />
+          </widget>
+          <packing>
+            <property name="X">234</property>
+            <property name="Y">316</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
